@@ -1,0 +1,17 @@
+services:
+  - type: worker
+    name: tg-connector
+    repo: https://github.com/Twingate-Labs/tg-render.git
+    branch: main
+    env: docker
+    dockerfilePath: ./twingate/Dockerfile
+    dockerContext: ./twingate
+    envVars:
+      - key: TENANT_URL
+        sync: false
+      - key: ACCESS_TOKEN
+        sync: false
+      - key: REFRESH_TOKEN
+        sync: false
+      - key: TWINGATE_LOG_ANALYTICS
+        value: "v1"

@@ -1,0 +1,1 @@
+FROM twingate/connector:1
