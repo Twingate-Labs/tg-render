@@ -15,3 +15,5 @@ services:
         sync: false
       - key: TWINGATE_LOG_ANALYTICS
         value: "v1"
+      - key: TWINGATE_LABEL_DEPLOYEDBY
+        value: "render"
